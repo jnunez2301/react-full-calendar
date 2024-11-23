@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import CalendarContext from "./CalendarProvider";
+import CalendarContext, { CalendarContextType } from "./CalendarProvider";
 
-const useCalendar = () => {
+const useCalendar = (): CalendarContextType => {
   const context = useContext(CalendarContext);
   if (!context) {
-    throw new Error("useCalendarContext must be used within a CalendarProvider");
+    throw new Error("useCalendar must be used within a CalendarProvider");
   }
   return context;
 };

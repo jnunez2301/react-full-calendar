@@ -1,12 +1,7 @@
 {
-  "name": "react-full-calendar",
-  "version": "1.0.0",
+  "name": "react-full-calendar-minimalistic",
+  "version": "1.0.4",
   "type": "module",
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

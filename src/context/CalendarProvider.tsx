@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState, ReactNode } from "react";
 
 interface CalendarContextType {
   selectedDay: Date | null;
@@ -6,9 +6,9 @@ interface CalendarContextType {
   clearSelectedDay: () => void;
 }
 
-const CalendarContext = createContext<CalendarContextType | null>(null);
+const CalendarContext = createContext<CalendarContextType | undefined>(undefined);
 
-export const CalendarProvider = ({ children }: { children: React.ReactNode }) => {
+export const CalendarProvider = ({ children }: { children: ReactNode }) => {
   const [selectedDay, setSelectedDay] = useState<Date | null>(null);
 
   function clearSelectedDay() {
@@ -30,4 +30,5 @@ export const CalendarProvider = ({ children }: { children: React.ReactNode }) =>
   );
 };
 
+export type { CalendarContextType };
 export default CalendarContext;
