@@ -10,6 +10,7 @@ interface CalendarProps {
 /**
  * @param hideTitle - Hide the middle title in case you don't want it
  * @param datesData - Calendar accepts an array of dates to display selected days in the calendar, this can be useful if you are planning to load events and then firing a modal for example
+ * @example You must set <CalendarProvider>{children}</CalendarProvider> on your root app
  * @example
  * const date1 = new Date();
  * const date2 = new Date();
