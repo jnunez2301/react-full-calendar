@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./calendar.style.css";
-import useCalendar from "./hooks/useCalendar";
+import useCalendar from "../context/context";
+
 
 interface CalendarProps {
   hideTitle?: boolean;
